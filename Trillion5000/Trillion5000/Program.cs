@@ -74,7 +74,7 @@ namespace Trillion5000
                 g.SmoothingMode = SmoothingMode.HighQuality;
 
                 PrivateFontCollection coll = new PrivateFontCollection();
-                coll.AddFontFile(@"C:\Users\m-kou\Desktop\5000\notobk-subset.otf");
+                coll.AddFontFile(@"notobk-subset.otf");
                 FontFamily topFontFamily = coll.Families[0];
 
                 #region 5000兆円 の描画
@@ -301,7 +301,7 @@ namespace Trillion5000
             g.SmoothingMode = SmoothingMode.HighQuality;
 
             PrivateFontCollection coll2 = new PrivateFontCollection();
-            coll2.AddFontFile(@"C:\Users\m-kou\Desktop\5000\notoserifbk-subset.otf");
+            coll2.AddFontFile(@"notoserifbk-subset.otf");
 
             FontFamily bottomFontFamily = coll2.Families[0];
 
