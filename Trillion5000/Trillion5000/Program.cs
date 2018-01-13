@@ -4,8 +4,8 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Drawing.Text;
-using System.Runtime.InteropServices;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace Trillion5000
 {
@@ -82,7 +82,7 @@ namespace Trillion5000
                 // 黒色
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(4, 4), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(4, 4), null);
                     var pen = new Pen(Brushes.Black, 22)
                     {
                         LineJoin = LineJoin.Round,
@@ -94,7 +94,7 @@ namespace Trillion5000
                 // 銀色
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(4, 4), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(4, 4), null);
                     LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 20, ImageWidth, 135),
                         Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                     ColorBlend blend = new ColorBlend
@@ -143,7 +143,7 @@ namespace Trillion5000
                 // 黒色
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(0, 0), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(0, 0), null);
                     var pen = new Pen(Brushes.Black, 16)
                     {
                         LineJoin = LineJoin.Round,
@@ -157,7 +157,7 @@ namespace Trillion5000
                 // 金色
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(0, 0), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(0, 0), null);
                     LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 20, ImageWidth, 135),
                         Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                     ColorBlend blend = new ColorBlend
@@ -199,7 +199,7 @@ namespace Trillion5000
                 // 黒
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(2, -3), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(2, -3), null);
                     var pen = new Pen(Brushes.Black, 6)
                     {
                         LineJoin = LineJoin.Round,
@@ -210,7 +210,7 @@ namespace Trillion5000
                 // 白
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(0, -3), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(0, -3), null);
                     var pen = new Pen(Brushes.White, 6)
                     {
                         LineJoin = LineJoin.Round,
@@ -221,7 +221,7 @@ namespace Trillion5000
                 // 赤
                 {
                     var graphiscPath = new GraphicsPath();
-                    graphiscPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(0, -3), null);
+                    graphiscPath.AddString(text, topFontFamily, 0, 100, new PointF(0, -3), null);
                     LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 20, ImageWidth, 122),
                         Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                     ColorBlend blend = new ColorBlend
@@ -257,7 +257,7 @@ namespace Trillion5000
                 // 赤
                 {
                     GraphicsPath gPath = new GraphicsPath();
-                    gPath.AddString(text, topFontFamily, (int)FontStyle.Italic, 100, new PointF(0, -3), null);
+                    gPath.AddString(text, topFontFamily, 0, 100, new PointF(0, -3), null);
                     LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 20, ImageWidth, 122),
                         Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                     ColorBlend blend = new ColorBlend
@@ -310,7 +310,7 @@ namespace Trillion5000
             // 黒色
             {
                 var graphiscPath = new GraphicsPath();
-                graphiscPath.AddString(text, bottomFontFamily, (int)FontStyle.Italic, 100, new PointF(5, 2), null);
+                graphiscPath.AddString(text, bottomFontFamily, 0, 100, new PointF(5, 2), null);
                 var pen = new Pen(Color.Black, 22)
                 {
                     LineJoin = LineJoin.Round,
@@ -321,7 +321,7 @@ namespace Trillion5000
             // 銀色
             {
                 var graphiscPath = new GraphicsPath();
-                graphiscPath.AddString(text, bottomFontFamily, (int)FontStyle.Italic, 100, new PointF(5, 2), null);
+                graphiscPath.AddString(text, bottomFontFamily, 0, 100, new PointF(5, 2), null);
                 LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 15, ImageWidth, 150),
                     Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                 ColorBlend blend = new ColorBlend
@@ -366,7 +366,7 @@ namespace Trillion5000
             // 黒色
             {
                 var graphiscPath = new GraphicsPath();
-                graphiscPath.AddString(text, bottomFontFamily, (int)FontStyle.Italic, 100, new PointF(0, 0), null);
+                graphiscPath.AddString(text, bottomFontFamily, 0, 100, new PointF(0, 0), null);
                 var pen = new Pen(Color.FromArgb(16, 25, 58), 17)
                 {
                     LineJoin = LineJoin.Round,
@@ -377,8 +377,8 @@ namespace Trillion5000
             // 白
             {
                 var graphiscPath = new GraphicsPath();
-                graphiscPath.AddString(text, bottomFontFamily, (int)FontStyle.Italic, 100, new PointF(0, 0), null);
-                var pen = new Pen(Color.FromArgb(13, 13, 13), 7)
+                graphiscPath.AddString(text, bottomFontFamily, 0, 100, new PointF(0, 0), null);
+                var pen = new Pen(Color.FromArgb(221, 221, 221), 7)
                 {
                     LineJoin = LineJoin.Round,
                 };
@@ -388,7 +388,7 @@ namespace Trillion5000
             // 紺色
             {
                 var graphiscPath = new GraphicsPath();
-                graphiscPath.AddString(text, bottomFontFamily, (int)FontStyle.Italic, 100, new PointF(0, 0), null);
+                graphiscPath.AddString(text, bottomFontFamily, 0, 100, new PointF(0, 0), null);
                 LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 0, ImageWidth, 135),
                     Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                 ColorBlend blend = new ColorBlend
@@ -425,7 +425,7 @@ namespace Trillion5000
             // 銀色
             {
                 var graphiscPath = new GraphicsPath();
-                graphiscPath.AddString(text, bottomFontFamily, (int)FontStyle.Italic, 100, new PointF(0, 0 - 3), null);
+                graphiscPath.AddString(text, bottomFontFamily, 0, 100, new PointF(0, 0 - 3), null);
                 LinearGradientBrush brush = new LinearGradientBrush(new RectangleF(0, 0, ImageWidth, 135),
                     Color.AliceBlue, Color.AntiqueWhite, LinearGradientMode.Vertical);
                 ColorBlend blend = new ColorBlend
